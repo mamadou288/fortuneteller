@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'randomfortune/style.css' %}">
+    <title>Fortuneteller</title>
+</head>
+<body>
+    <h1>Bienvenue sur fortuneteller!</h1>
+    <br>
+    <p> fortune : 
+        <br> 
+        {{ fortune }}
+    </p>
+    <form method="get">
+        <button type="submit">Obtenir une nouvelle fortune</button>
+    </form>
+
+</body>
+</html>
